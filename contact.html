@@ -1,0 +1,92 @@
+<!--Created by Jonathan-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Retro Sneakers</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header section with navigation -->
+    <header>
+      <div class="navbar">
+        <div class="header-text">
+          <a href="index.html">Retro Sneakers</a>
+        </div>
+        <!-- Navigation links -->
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <!-- Hamburger menu for mobile view -->
+        <div class="hamburger-container" onclick="toggleHamburger(this)">
+          <div class="hamburger"></div>
+          <div class="hamburger"></div>
+          <div class="hamburger"></div>
+        </div>
+      </div>
+      <!-- Hamburger menu for mobile view -->
+      <div class="dropdown-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </div>
+    </header>
+    <!-- Main content area -->
+    <main>
+      <div class="form-container">
+        <div class="item">
+          <div class="contact">
+            <div class="first-text">Let's Get In Touch</div>
+            <img src="IMAGE/contact-us.jpg" alt="contact-us" class="image" />
+          </div>
+          <!-- Contact form -->
+          <div class="submit-form">
+            <form id="contact-form" action="">
+              <h2 class="text">Contact Us</h2>
+              <div class="input-box">
+                <input type="text" class="input" name="name" required />
+                <label for="name">Name</label>
+              </div>
+             <!-- Email text area -->
+              <div class="input-box">
+                <input type="email" class="input" name="email" required />
+                <label for="email">Email</label>
+              </div>
+              <!-- Phone text area -->
+              <div class="input-box">
+                <input type="tel" class="input" name="tel" required />
+                <label for="tel">Phone</label>
+              </div>
+             <!-- Message text area-->
+              <div class="input-box">
+                <textarea
+                  name="message"
+                  id="message"
+                  class="input"
+                  cols="30"
+                  rows="10"
+                  required
+                ></textarea>
+                <label for="tel">Message</label>
+              </div>
+           <!-- Submit button -->
+              <input type="submit" class="submit-btn" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer section -->
+    <footer>
+      <p>&copy; 2025 Retro Sneakers. All rights reserved.</p>
+    </footer>
+    <!-- Link to external JavaScript file -->
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
